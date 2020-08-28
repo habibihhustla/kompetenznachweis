@@ -1,0 +1,26 @@
+Gestartet durch Benutzer [8mha:////4JQgqsPDL0ycF1GtAgztNbl5g4iy04gMaA1LuvxuHWRbAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgYe/dLi1CL9ysTi4sw8AMhKFIPBAAAA[0myassin abdelhamid
+Running as SYSTEM
+Baue in Arbeitsbereich C:\DevTools\jenkins\workspace\kompetenznachweis
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/habibihhustla/kompetenznachweis.git
+ > git.exe init C:\DevTools\jenkins\workspace\kompetenznachweis # timeout=10
+Fetching upstream changes from https://github.com/habibihhustla/kompetenznachweis.git
+ > git.exe --version # timeout=10
+ > git --version # 'git version 2.27.0.windows.1'
+ > git.exe fetch --tags --force --progress -- https://github.com/habibihhustla/kompetenznachweis.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe config remote.origin.url https://github.com/habibihhustla/kompetenznachweis.git # timeout=10
+ > git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 7295bfbe0ea8b61f21b702ef8a8919ad72a26fcf (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 7295bfbe0ea8b61f21b702ef8a8919ad72a26fcf # timeout=10
+Commit message: "Signed-off-by: habibihustla <yassin1001@gmail.com>"
+First time build. Skipping changelog.
+[kompetenznachweis] $ cmd.exe /C "mvn -f blob/master/Aufgabe%203/maven-kompetenz-business/pom.xml clean install && exit %%ERRORLEVEL%%"
+POM file "blob/master/Aufgabe%203/maven-kompetenz-business/pom.xml" specified the -f/--file command-line argument does not exist 
+Build step 'Maven Goals aufrufen' marked build as failure
+Finished: FAILURE
